@@ -2,8 +2,8 @@ import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { FormContainer } from './ContactForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'redux/api';
-import { getContacts } from 'redux/selectors';
+import { addContact } from 'redux/contacts/api';
+import { getContacts } from 'redux/contacts/selectors';
 
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
@@ -28,7 +28,7 @@ export const ContactForm = () => {
       alert(`${newContact.name} is already in contacts.`);
       return;
     }
-    dispatch(addContact({ name: newContact.name, phone: newContact.phone }));
+    dispatch(addContact({ name: newContact.name, number: newContact.phone }));
   };
 
   return (

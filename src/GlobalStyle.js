@@ -96,6 +96,13 @@ export const GlobalStyle = createGlobalStyle`
         margin-right: auto;
     }
 
+    .wrapper {
+        width: 100%;
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .btn {
     padding: 8px 15px;
     border-radius: 5px;

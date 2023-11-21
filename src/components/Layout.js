@@ -5,7 +5,7 @@ import { NavBar } from './NavBar/NavBar';
 
 export const Layout = () => {
   return (
-    <div style={{ maxWidth: 960, margin: '0 auto', padding: '0 16px' }}>
+    <div className="wrapper">
       <NavBar />
       <Suspense fallback={null}>
         <Outlet />

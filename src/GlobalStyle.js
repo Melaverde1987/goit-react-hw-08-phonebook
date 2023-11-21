@@ -11,7 +11,15 @@ export const GlobalStyle = createGlobalStyle`
     h6 {
         margin-top: 0;
         margin-bottom: 0.5em;
-        font-weight: 600;
+        font-weight: 500;
+    }
+
+    h1 {
+        font-size: 48px;
+        text-align: center;
+        background: linear-gradient(45deg, var(--colorPrimary), var(--colorText));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     p {
@@ -42,6 +50,12 @@ export const GlobalStyle = createGlobalStyle`
         background-color: transparent;
         padding: 0;
         font-size: 16px;
+        transition: color var(--cubic-transition);
+    }
+
+    button:hover,
+    button:focus {
+        color: var(--colorPrimary);
     }
 
     img {
@@ -98,9 +112,16 @@ export const GlobalStyle = createGlobalStyle`
 
     .wrapper {
         width: 100%;
-        max-width: 1500px;
+        max-width: 960px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .homeWrapper {
+        min-height: calc(100vh - 50px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .btn {

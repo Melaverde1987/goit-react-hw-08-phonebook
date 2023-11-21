@@ -4,16 +4,6 @@ import { selectVisibleContacts } from 'redux/contacts/selectors';
 import { deleteContact } from 'redux/contacts/api';
 
 export const ContactList = () => {
-  /*
-  const getvisibleContacts = (contacts, filter) => {
-    return contacts.filter(contact =>
-      contact.name.toLowerCase().includes(filter.toLowerCase())
-    );
-  };
-  */
-  //const contacts = useSelector(getContacts);
-  //const filter = useSelector(getFilter);
-  //const visibleContacts = getvisibleContacts(contacts, filter);
   const visibleContacts = useSelector(selectVisibleContacts);
 
   const dispatch = useDispatch();

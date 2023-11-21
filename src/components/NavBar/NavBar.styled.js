@@ -6,4 +6,11 @@ export const Header = styled.header`
   align-items: center;
   margin-bottom: 16px;
   border-bottom: 1px solid #2a363b;
+  padding-block: 20px;
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
 `;

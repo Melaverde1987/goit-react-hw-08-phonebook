@@ -21,7 +21,7 @@ export default function Tasks() {
       <Helmet>
         <title>Your contacts</title>
       </Helmet>
-      <div>{isLoading && 'Request in progress...'}</div>
+      {isLoading && <div>'Request in progress...'</div>}
       <div className="card">
         <h1>Phonebook</h1>
         <ContactForm />

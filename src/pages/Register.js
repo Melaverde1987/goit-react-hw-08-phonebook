@@ -3,7 +3,7 @@ import { RegisterForm } from 'components/RegisterForm/RegisterForm';
 
 export default function Register() {
   return (
-    <div>
+    <div className="card">
       <Helmet>
         <title>Registration</title>
       </Helmet>

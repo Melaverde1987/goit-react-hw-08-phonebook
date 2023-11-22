@@ -15,7 +15,7 @@ export const ContactList = () => {
         <ListItem key={contact.id}>
           <p>
             <span>{contact.name}: </span>
-            <span>{contact.phone}</span>
+            <span>{contact.number}</span>
           </p>
 
           <button

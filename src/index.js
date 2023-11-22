@@ -13,7 +13,7 @@ function renderApp() {
   root.render(
     <Provider store={store}>
       <ThemeProvider theme={{}}>
-        <BrowserRouter>
+        <BrowserRouter basename="/goit-react-hw-08-phonebook">
           <App />
         </BrowserRouter>
         <GlobalStyle />
